@@ -1,0 +1,237 @@
+html{
+    scroll-behavior: smooth;
+}
+*{       /* for every tag common we use star*/
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+nav{
+    position:fixed;
+    top:0px;
+    width:100%;
+    text-align:center;
+    z-index:1000;
+    background-color: black;
+    padding: 20px 0;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 20px;
+    font-size:18px;
+    letter-spacing:2px;
+}
+.home{
+    height:100vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+   url("../images/coverimage.jpeg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+    text-align:center;
+}
+
+.home h2{
+    font-size:40px;
+    margin-bottom:10px;
+    font-weight: normal;
+}
+
+.home h1{
+    font-size:70px;
+    margin-bottom:15px;
+    font-weight:bold;
+}
+
+
+.about{
+    padding: 80px 10%;
+    text-align: center;
+    background-color: white;
+}
+
+.about h1{
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: black;
+}
+
+.about p{
+    max-width: 900px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.8;
+    color:black;
+    text-align: justify;
+}
+.about-img{
+    width:300px;
+    height:250px;
+    object-fit:cover;
+    border-radius:10px;
+}
+.project{
+    padding: 80px 10%;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+.project h1{
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.project-container{    /* it is used to align one another next ie a parent element*/
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;   /*if there isn't enough space, cards automatically move to the next row*/
+}
+
+.project-card{    /* it is used to align one another next ie a child element*/
+    width: 400px;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.project-card:hover{
+    transform: translateY(-10px);
+}
+
+.project-card h2{
+    margin-bottom: 15px;
+}
+
+.project-card p{
+    text-align: justify;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.project-card button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #333;
+    color: white;
+    cursor: pointer;
+}
+
+.project-card button:hover{
+    background: #555;
+}
+.skills{
+    padding:100px 10%;
+}
+
+.skills h1{
+    text-align: center;
+    font-size:42px;
+    margin-bottom:60px;
+    width:100%;
+    display: block;
+}
+
+.skills-container{
+    display:flex;
+    justify-content:center;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    flex-wrap:wrap;
+    gap:40px;
+}
+
+.skill-card{
+    width:280px;
+    padding:30px;
+    background:white;
+    border-radius:15px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.skill-card:hover{
+    transform:translateY(-8px);
+}
+
+.skill-card h2{
+    margin-bottom:15px;
+}
+
+.skill-card p{
+    line-height:1.6;
+}
+.contact{
+    padding: 80px 10%;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+.contact h1{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.contact form{
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact label{
+    display: block;
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.contact input,
+.contact textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button{
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact button:hover{
+    background: #555;
+}
+
+.contact-info{
+    margin-top: 40px;
+}
+
+.contact-info h2{
+    margin-bottom: 15px;
+}
+
+.contact-info p{
+    margin: 8px 0;
+}
